@@ -12,5 +12,5 @@ echo "Useage: <top level module> <input file>"
 yosys -p "prep -top $1; write_json output.json" ${@:2}
 
 # copy JSON output to clipboard
-xclip < output.json
-echo "JSON copied to clipboard"
+# xclip < output.json
+# echo "JSON copied to clipboard"
