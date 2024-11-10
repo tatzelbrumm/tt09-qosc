@@ -13,7 +13,6 @@ module registers(
 );
 
   always @(posedge clk) begin
-    RnotW <= (3'b0 == address);
     if (! reset_n) begin
       re_coeff <= 8'h7d;    // Example real coefficient
       im_coeff <= 8'h1b;    // Example imaginary coefficient
@@ -22,14 +21,17 @@ module registers(
       init_im <= 8'h0;      // Initial accumulator imaginary part
       RnotW <= 0;
     end
-    else if (load) begin
-      case (address)
-        3'o2: init_re <= data_in;
-        3'o3: init_im <= data_in;
-        3'o4: re_coeff <= data_in;
-        3'o5: im_coeff <= data_in;
-        3'o6: power <= data_in;
-      endcase
+    else begin
+      RnotW <= (3'b0 == address);
+      if (load) begin
+        case (address)
+          3'o2: init_re <= data_in;
+          3'o3: init_im <= data_in;
+          3'o4: re_coeff <= data_in;
+          3'o5: im_coeff <= data_in;
+          3'o6: power <= data_in;
+        endcase
+      end
     end
   end
 endmodule
