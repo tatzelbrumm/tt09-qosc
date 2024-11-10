@@ -71,7 +71,6 @@ quadrature_oscillator_sync qosc(
   // All output pins must be assigned. If not used, assign to 0.
   assign uo_out  = accu_re;
   assign uio_out = accu_im;
-  assign uio_oe  = 8'hff;
 
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, ui_in[5:3], 1'b0};
