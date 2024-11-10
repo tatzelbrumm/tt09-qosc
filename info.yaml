@@ -19,6 +19,7 @@ project:
   source_files:
     - "tt_um_qosc.v"
     - "quadrature_oscillator_sync.v"
+    - "refclk_sync.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
