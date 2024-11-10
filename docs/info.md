@@ -7,9 +7,11 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
+# qOSC
+
 ## How it works
 
-Explain how your project works
+16-bit quadrature oscillator as complex multiplication with amplitude feedback
 
 ## How to test
 
