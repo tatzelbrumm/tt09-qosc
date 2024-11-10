@@ -36,10 +36,10 @@ module tt_um_qosc (
   assign accu_im_init = 8'h0;   // Initial accumulator imaginary part
 
 refclk_sync synchronizer(
-    .i_reset_n(rst_n),
-    .i_clk(clk),
-    .i_refclk(extclk),
-    .o_refclk_sync(takt),
+    .i_reset_n (rst_n),
+    .i_clk (clk),
+    .i_refclk (extclk),
+    .o_refclk_sync (takt),
 );
    
 quadrature_oscillator_sync qosc(
