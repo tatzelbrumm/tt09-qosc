@@ -17,6 +17,7 @@ module tt_um_qosc (
 );
 
   wire load;
+  wire extclk; 
   wire takt;
   wire [7:0] re_coeff;
   wire [7:0] im_coeff;
@@ -27,6 +28,7 @@ module tt_um_qosc (
   wire [7:0] accu_im;
 
   assign load = ui_in[0] ~& rst_n;
+  assign extclk = ui_in[1];
   assign re_coeff = 8'h7d;    // Example real coefficient
   assign im_coeff = 8'h1b;    // Example imaginary coefficient
   assign power = 8'h40;       // Target power level
@@ -36,7 +38,7 @@ module tt_um_qosc (
 refclk_sync synchronizer(
     .i_reset_n(rst_n),
     .i_clk(clk),
-    .i_refclk(ui_in[1]),
+    .i_refclk(extclk),
     .o_refclk_sync(takt),
 );
    
