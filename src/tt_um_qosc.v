@@ -17,6 +17,7 @@ module tt_um_qosc (
 );
 
   wire load;
+  wire takt;
   wire [7:0] re_coeff;
   wire [7:0] im_coeff;
   wire [7:0] power;
@@ -32,8 +33,15 @@ module tt_um_qosc (
   assign accu_re_init = 16'h20;  // Initial accumulator real part
   assign accu_im_init = 16'h0;    // Initial accumulator imaginary part
 
+refclk_sync synchronizer(
+    .i_reset_n(rst_n),
+    .i_clk(clk),
+    .i_refclk(ui_in[1]),
+    .o_refclk_sync(takt),
+);
+   
 quadrature_oscillator_sync qosc(
-    .clk (clk),
+    .clk (takt),
     .load (load),                      // Preload signal
     .re_coeff (re_coeff),
     .im_coeff (im_coeff),
@@ -50,6 +58,6 @@ quadrature_oscillator_sync qosc(
   assign uio_oe  = 8'hff;
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, ui_in[7:1], uio_in, 1'b0};
+  wire _unused = &{ena, ui_in[7:2], uio_in, 1'b0};
 
 endmodule
