@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Your Name
+ * Copyright (c) 2024 Christoph Maier
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -17,8 +17,10 @@ module tt_um_qosc (
 );
 
   wire load;
+  wire dir;
   wire extclk; 
   wire takt;
+  wire [2:0] addr;
   wire [7:0] re_coeff;
   wire [7:0] im_coeff;
   wire [7:0] power;
@@ -27,13 +29,25 @@ module tt_um_qosc (
   wire [7:0] accu_re;
   wire [7:0] accu_im;
 
-  assign load = ui_in[0] ~& rst_n;
-  assign extclk = ui_in[1];
-  assign re_coeff = 8'h7d;    // Example real coefficient
-  assign im_coeff = 8'h1b;    // Example imaginary coefficient
-  assign power = 8'h40;       // Target power level
-  assign accu_re_init = 8'h20;  // Initial accumulator real part
-  assign accu_im_init = 8'h0;   // Initial accumulator imaginary part
+  assign load = ui_in[6] ~& rst_n;
+  assign uio_oe = {8{dir}};
+  assign extclk = ui_in[7];
+  assign addr = ui_in[2:0];
+
+registers regs(
+  .reset_n (rst_n),
+  .clk (clk),
+  .load (load),
+  .address (addr),
+  .data_in (uio_in),
+  .RnotW (dir),
+  .init_re (accu_re_init),
+  .init_im (accu_im_init),
+  .re_coeff (re_coeff),
+  .im_coeff (im_coeff),
+  .power (power)
+);
+
 
 refclk_sync synchronizer(
     .i_reset_n (rst_n),
