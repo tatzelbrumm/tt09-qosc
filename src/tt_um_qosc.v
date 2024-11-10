@@ -17,13 +17,13 @@ module tt_um_qosc (
 );
 
   wire load;
-  wire re_coeff [15:0];
-  wire im_coeff [15:0];
-  wire power [15:0];
-  wire accu_re_init [15:0];
-  wire accu_im_init [15:0];
-  wire accu_re [15:0];
-  wire accu_im [15:0];
+  wire [15:0] re_coeff ;
+  wire [15:0] im_coeff;
+  wire [15:0] power;
+  wire [15:0] accu_re_init;
+  wire [15:0] accu_im_init;
+  wire [15:0] accu_re;
+  wire [15:0] accu_im;
 
   assign load = ui_in[0] ~& rst_n;
 
