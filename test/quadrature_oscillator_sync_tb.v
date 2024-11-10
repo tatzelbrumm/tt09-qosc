@@ -5,13 +5,13 @@ module quadrature_oscillator_sync_tb;
     // Parameters
     reg clk;
     reg load;
-    reg signed [15:0] re_coeff;
-    reg signed [15:0] im_coeff;
-    reg signed [15:0] power;
-    reg signed [15:0] accu_re_init;
-    reg signed [15:0] accu_im_init;
-    wire signed [15:0] accu_re;
-    wire signed [15:0] accu_im;
+    reg signed [7:0] re_coeff;
+    reg signed [7:0] im_coeff;
+    reg signed [7:0] power;
+    reg signed [7:0] accu_re_init;
+    reg signed [7:0] accu_im_init;
+    wire signed [7:0] accu_re;
+    wire signed [7:0] accu_im;
 
     // Number of iterations
     integer num_iterations = 1000;  // Specify the number of iterations here
@@ -41,9 +41,9 @@ module quadrature_oscillator_sync_tb;
         $dumpfile("quadrature_oscillator_sync_tb.vcd");  // Specify the output VCD file
         $dumpvars(0, quadrature_oscillator_sync_tb);     // Dump all variables in the testbench
         // Initialize parameters
-        re_coeff = 16'h7d34;  // Example real coefficient
-        im_coeff = 16'h1a9d;  // Example imaginary coefficient
-        power = 16'h400;      // Target power level
+        re_coeff = 16'h7d;  // Example real coefficient
+        im_coeff = 16'h1b;  // Example imaginary coefficient
+        power = 16'h10;      // Target power level
         accu_re_init = 16'h20;  // Initial accumulator real part
         accu_im_init = 16'h0;    // Initial accumulator imaginary part
 
