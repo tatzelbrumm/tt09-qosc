@@ -20,18 +20,19 @@ project:
     - "tt_um_qosc.v"
     - "quadrature_oscillator_sync.v"
     - "refclk_sync.v"
+    - "registers.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "load_n"
-  ui[1]: "clock"
-  ui[2]: ""
+  ui[0]: "A0"
+  ui[1]: "A1"
+  ui[2]: "A2"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[6]: "load_n"
+  ui[7]: "clock"
 
   # Outputs
   uo[0]: "re0"

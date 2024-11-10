@@ -8,6 +8,7 @@ SRC_DIR = $(PWD)/../src
 PROJECT_SOURCES = tt_um_qosc.v
 PROJECT_SOURCES += quadrature_oscillator_sync.v
 PROJECT_SOURCES += refclk_sync.v
+PROJECT_SOURCES += registers.v
 
 ifneq ($(GATES),yes)
 
