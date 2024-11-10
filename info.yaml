@@ -33,24 +33,24 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "im12"
-  uo[1]: "im13"
-  uo[2]: "im14"
-  uo[3]: "im15"
-  uo[4]: "re12"
-  uo[5]: "re13"
-  uo[6]: "re14"
-  uo[7]: "re15"
+  uo[0]: "re0"
+  uo[1]: "re1"
+  uo[2]: "re2"
+  uo[3]: "re3"
+  uo[4]: "re4"
+  uo[5]: "re5"
+  uo[6]: "re6"
+  uo[7]: "re7"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "im0"
+  uio[1]: "im1"
+  uio[2]: "im2"
+  uio[3]: "im3"
+  uio[4]: "im4"
+  uio[5]: "im5"
+  uio[6]: "im6"
+  uio[7]: "im7"
 
 # Do not change!
 yaml_version: 6
