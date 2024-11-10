@@ -26,6 +26,11 @@ module tt_um_qosc (
   wire [15:0] accu_im;
 
   assign load = ui_in[0] ~& rst_n;
+  assign re_coeff = 16'h7d34;  // Example real coefficient
+  assign im_coeff = 16'h1a9d;  // Example imaginary coefficient
+  assign power = 16'h400;      // Target power level
+  assign accu_re_init = 16'h20;  // Initial accumulator real part
+  assign accu_im_init = 16'h0;    // Initial accumulator imaginary part
 
 quadrature_oscillator_sync qosc(
     .clk (clk),
