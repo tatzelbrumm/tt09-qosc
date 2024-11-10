@@ -17,18 +17,18 @@ module tt_um_qosc (
 );
 
   wire load;
-  wire [15:0] re_coeff;
-  wire [15:0] im_coeff;
-  wire [15:0] power;
-  wire [15:0] accu_re_init;
-  wire [15:0] accu_im_init;
-  wire [15:0] accu_re;
-  wire [15:0] accu_im;
+  wire [7:0] re_coeff;
+  wire [7:0] im_coeff;
+  wire [7:0] power;
+  wire [7:0] accu_re_init;
+  wire [7:0] accu_im_init;
+  wire [7:0] accu_re;
+  wire [7:0] accu_im;
 
   assign load = ui_in[0] ~& rst_n;
-  assign re_coeff = 16'h7d34;  // Example real coefficient
-  assign im_coeff = 16'h1a9d;  // Example imaginary coefficient
-  assign power = 16'h400;      // Target power level
+  assign re_coeff = 8'h7d;    // Example real coefficient
+  assign im_coeff = 8'h1b;    // Example imaginary coefficient
+  assign power = 8'h40;       // Target power level
   assign accu_re_init = 16'h20;  // Initial accumulator real part
   assign accu_im_init = 16'h0;    // Initial accumulator imaginary part
 
@@ -45,10 +45,9 @@ quadrature_oscillator_sync qosc(
 );
 
   // All output pins must be assigned. If not used, assign to 0.
-  assign uo_out[7:4]  = accu_re[15:12];
-  assign uo_out[3:0]  = accu_im[15:12];
-  assign uio_out = 0;
-  assign uio_oe  = 0;
+  assign uo_out  = accu_re;
+  assign uio_out = accu_im;
+  assign uio_oe  = 8'hff;
 
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, ui_in[7:1], uio_in, 1'b0};
