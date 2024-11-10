@@ -17,7 +17,7 @@ module tt_um_qosc (
 );
 
   wire load;
-  wire [15:0] re_coeff ;
+  wire [15:0] re_coeff;
   wire [15:0] im_coeff;
   wire [15:0] power;
   wire [15:0] accu_re_init;
