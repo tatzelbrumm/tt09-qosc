@@ -1,5 +1,5 @@
 $date
-	Sun Nov 10 12:51:45 2024
+	Sun Nov 10 11:27:13 2024
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1ps
 $end
-$scope module tt_um_qosc_tb $end
+$scope module quadrature_oscillator_sync_tb $end
 $var wire 16 ! accu_re [15:0] $end
 $var wire 16 " accu_im [15:0] $end
 $var reg 16 # accu_im_init [15:0] $end
