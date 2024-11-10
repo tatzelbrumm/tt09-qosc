@@ -1,6 +1,6 @@
 .DS_Store
 .idea
-*.vcd
+# *.vcd
 runs
 tt_submission
 src/user_config.json
