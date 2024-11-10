@@ -41,11 +41,11 @@ module quadrature_oscillator_sync_tb;
         $dumpfile("quadrature_oscillator_sync_tb.vcd");  // Specify the output VCD file
         $dumpvars(0, quadrature_oscillator_sync_tb);     // Dump all variables in the testbench
         // Initialize parameters
-        re_coeff = 16'h7d;  // Example real coefficient
-        im_coeff = 16'h1b;  // Example imaginary coefficient
-        power = 16'h10;      // Target power level
-        accu_re_init = 16'h20;  // Initial accumulator real part
-        accu_im_init = 16'h0;    // Initial accumulator imaginary part
+        re_coeff = 8'h7d;  // Example real coefficient
+        im_coeff = 8'h1b;  // Example imaginary coefficient
+        power = 8'h10;     // Target power level
+        accu_re_init = 8'h20;  // Initial accumulator real part
+        accu_im_init = 8'h0;   // Initial accumulator imaginary part
 
         // Preload the oscillator with initial values
         load = 1;
