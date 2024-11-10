@@ -32,8 +32,8 @@ module tt_um_qosc (
   assign re_coeff = 8'h7d;    // Example real coefficient
   assign im_coeff = 8'h1b;    // Example imaginary coefficient
   assign power = 8'h40;       // Target power level
-  assign accu_re_init = 16'h20;  // Initial accumulator real part
-  assign accu_im_init = 16'h0;    // Initial accumulator imaginary part
+  assign accu_re_init = 8'h20;  // Initial accumulator real part
+  assign accu_im_init = 8'h0;   // Initial accumulator imaginary part
 
 refclk_sync synchronizer(
     .i_reset_n(rst_n),
