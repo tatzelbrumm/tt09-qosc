@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-16-bit quadrature oscillator as complex multiplication with amplitude feedback
+8-bit quadrature oscillator as complex multiplication with amplitude feedback
 
 ## How to test
 
