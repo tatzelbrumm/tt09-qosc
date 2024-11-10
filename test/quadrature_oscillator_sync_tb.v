@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tt_um_qosc_tb;
+module quadrature_oscillator_sync_tb;
 
     // Parameters
     reg clk;
@@ -18,7 +18,7 @@ module tt_um_qosc_tb;
     integer i;
 
     // Instantiate the quadrature oscillator module
-    tt_um_qosc uut (
+    quadrature_oscillator_sync uut (
         .clk(clk),
         .load(load),
         .re_coeff(re_coeff),
@@ -38,8 +38,8 @@ module tt_um_qosc_tb;
 
     // Test procedure
     initial begin
-        $dumpfile("tt_um_qosc_tb.vcd");  // Specify the output VCD file
-        $dumpvars(0, tt_um_qosc_tb);     // Dump all variables in the testbench
+        $dumpfile("quadrature_oscillator_sync_tb.vcd");  // Specify the output VCD file
+        $dumpvars(0, quadrature_oscillator_sync_tb);     // Dump all variables in the testbench
         // Initialize parameters
         re_coeff = 16'h7d34;  // Example real coefficient
         im_coeff = 16'h1a9d;  // Example imaginary coefficient

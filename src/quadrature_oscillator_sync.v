@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tt_um_qosc(
+module quadrature_oscillator_sync(
     input clk,
     input load,                        // Preload signal
     input signed [15:0] re_coeff,
