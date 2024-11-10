@@ -28,7 +28,7 @@ always @(posedge clk) begin
       3'o3: init_im <= data_in;
       3'o4: re_coeff <= data_in;
       3'o5: im_coeff <= data_in;
-      3'o6: power <= data_in
+      3'o6: power <= data_in;
     endcase
   end
 end
