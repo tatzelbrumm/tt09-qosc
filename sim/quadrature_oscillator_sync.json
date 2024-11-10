@@ -1,10 +1,10 @@
 {
   "creator": "Yosys 0.9+4292 (git sha1 50be8fd0, gcc 9.3.0-17ubuntu1~20.04 -fPIC -Os)",
   "modules": {
-    "tt_um_qosc": {
+    "quadrature_oscillator_sync": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "src/tt_um_qosc.v:3.1-49.10"
+        "src": "../src/quadrature_oscillator_sync.v:3.1-49.10"
       },
       "ports": {
         "clk": {
@@ -52,7 +52,7 @@
         }
       },
       "cells": {
-        "$add$src/tt_um_qosc.v:29$7": {
+        "$add$../src/quadrature_oscillator_sync.v:29$7": {
           "hide_name": 1,
           "type": "$add",
           "parameters": {
@@ -63,7 +63,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:29.23-29.66"
+            "src": "../src/quadrature_oscillator_sync.v:29.23-29.66"
           },
           "port_directions": {
             "A": "input",
@@ -76,7 +76,7 @@
             "Y": [ 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208 ]
           }
         },
-        "$add$src/tt_um_qosc.v:40$17": {
+        "$add$../src/quadrature_oscillator_sync.v:40$17": {
           "hide_name": 1,
           "type": "$add",
           "parameters": {
@@ -87,7 +87,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:40.23-40.47"
+            "src": "../src/quadrature_oscillator_sync.v:40.23-40.47"
           },
           "port_directions": {
             "A": "input",
@@ -100,7 +100,7 @@
             "Y": [ 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301 ]
           }
         },
-        "$add$src/tt_um_qosc.v:41$19": {
+        "$add$../src/quadrature_oscillator_sync.v:41$19": {
           "hide_name": 1,
           "type": "$add",
           "parameters": {
@@ -111,7 +111,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:41.23-41.47"
+            "src": "../src/quadrature_oscillator_sync.v:41.23-41.47"
           },
           "port_directions": {
             "A": "input",
@@ -124,7 +124,7 @@
             "Y": [ 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363 ]
           }
         },
-        "$mul$src/tt_um_qosc.v:28$2": {
+        "$mul$../src/quadrature_oscillator_sync.v:28$2": {
           "hide_name": 1,
           "type": "$mul",
           "parameters": {
@@ -135,7 +135,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:28.24-28.42"
+            "src": "../src/quadrature_oscillator_sync.v:28.24-28.42"
           },
           "port_directions": {
             "A": "input",
@@ -148,7 +148,7 @@
             "Y": [ 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394 ]
           }
         },
-        "$mul$src/tt_um_qosc.v:28$3": {
+        "$mul$../src/quadrature_oscillator_sync.v:28$3": {
           "hide_name": 1,
           "type": "$mul",
           "parameters": {
@@ -159,7 +159,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:28.47-28.65"
+            "src": "../src/quadrature_oscillator_sync.v:28.47-28.65"
           },
           "port_directions": {
             "A": "input",
@@ -172,7 +172,7 @@
             "Y": [ 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425 ]
           }
         },
-        "$mul$src/tt_um_qosc.v:29$5": {
+        "$mul$../src/quadrature_oscillator_sync.v:29$5": {
           "hide_name": 1,
           "type": "$mul",
           "parameters": {
@@ -183,7 +183,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:29.24-29.42"
+            "src": "../src/quadrature_oscillator_sync.v:29.24-29.42"
           },
           "port_directions": {
             "A": "input",
@@ -196,7 +196,7 @@
             "Y": [ 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146 ]
           }
         },
-        "$mul$src/tt_um_qosc.v:29$6": {
+        "$mul$../src/quadrature_oscillator_sync.v:29$6": {
           "hide_name": 1,
           "type": "$mul",
           "parameters": {
@@ -207,7 +207,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:29.47-29.65"
+            "src": "../src/quadrature_oscillator_sync.v:29.47-29.65"
           },
           "port_directions": {
             "A": "input",
@@ -220,7 +220,7 @@
             "Y": [ 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177 ]
           }
         },
-        "$mul$src/tt_um_qosc.v:36$11": {
+        "$mul$../src/quadrature_oscillator_sync.v:36$11": {
           "hide_name": 1,
           "type": "$mul",
           "parameters": {
@@ -231,7 +231,7 @@
             "Y_WIDTH": "00000000000000000000000000100000"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:36.37-36.54"
+            "src": "../src/quadrature_oscillator_sync.v:36.37-36.54"
           },
           "port_directions": {
             "A": "input",
@@ -244,7 +244,7 @@
             "Y": [ 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457 ]
           }
         },
-        "$mul$src/tt_um_qosc.v:36$13": {
+        "$mul$../src/quadrature_oscillator_sync.v:36$13": {
           "hide_name": 1,
           "type": "$mul",
           "parameters": {
@@ -255,7 +255,7 @@
             "Y_WIDTH": "00000000000000000000000000100000"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:36.59-36.76"
+            "src": "../src/quadrature_oscillator_sync.v:36.59-36.76"
           },
           "port_directions": {
             "A": "input",
@@ -268,7 +268,7 @@
             "Y": [ 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489 ]
           }
         },
-        "$mul$src/tt_um_qosc.v:40$16": {
+        "$mul$../src/quadrature_oscillator_sync.v:40$16": {
           "hide_name": 1,
           "type": "$mul",
           "parameters": {
@@ -279,7 +279,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:40.34-40.46"
+            "src": "../src/quadrature_oscillator_sync.v:40.34-40.46"
           },
           "port_directions": {
             "A": "input",
@@ -292,7 +292,7 @@
             "Y": [ 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270 ]
           }
         },
-        "$mul$src/tt_um_qosc.v:41$18": {
+        "$mul$../src/quadrature_oscillator_sync.v:41$18": {
           "hide_name": 1,
           "type": "$mul",
           "parameters": {
@@ -303,7 +303,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:41.34-41.46"
+            "src": "../src/quadrature_oscillator_sync.v:41.34-41.46"
           },
           "port_directions": {
             "A": "input",
@@ -324,7 +324,7 @@
             "WIDTH": "00000000000000000000000000010000"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:21.5-47.8"
+            "src": "../src/quadrature_oscillator_sync.v:21.5-47.8"
           },
           "port_directions": {
             "CLK": "input",
@@ -345,7 +345,7 @@
             "WIDTH": "00000000000000000000000000010000"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:21.5-47.8"
+            "src": "../src/quadrature_oscillator_sync.v:21.5-47.8"
           },
           "port_directions": {
             "CLK": "input",
@@ -366,7 +366,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "src/tt_um_qosc.v:22.13-22.17|src/tt_um_qosc.v:22.9-46.12"
+            "src": "../src/quadrature_oscillator_sync.v:22.13-22.17|../src/quadrature_oscillator_sync.v:22.9-46.12"
           },
           "port_directions": {
             "A": "input",
@@ -389,7 +389,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "src/tt_um_qosc.v:22.13-22.17|src/tt_um_qosc.v:22.9-46.12"
+            "src": "../src/quadrature_oscillator_sync.v:22.13-22.17|../src/quadrature_oscillator_sync.v:22.9-46.12"
           },
           "port_directions": {
             "A": "input",
@@ -404,7 +404,7 @@
             "Y": [ 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521 ]
           }
         },
-        "$sub$src/tt_um_qosc.v:28$4": {
+        "$sub$../src/quadrature_oscillator_sync.v:28$4": {
           "hide_name": 1,
           "type": "$sub",
           "parameters": {
@@ -415,7 +415,7 @@
             "Y_WIDTH": "00000000000000000000000000011111"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:28.23-28.66"
+            "src": "../src/quadrature_oscillator_sync.v:28.23-28.66"
           },
           "port_directions": {
             "A": "input",
@@ -428,7 +428,7 @@
             "Y": [ 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239 ]
           }
         },
-        "$sub$src/tt_um_qosc.v:36$12": {
+        "$sub$../src/quadrature_oscillator_sync.v:36$12": {
           "hide_name": 1,
           "type": "$sub",
           "parameters": {
@@ -439,7 +439,7 @@
             "Y_WIDTH": "00000000000000000000000000100000"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:36.19-36.55"
+            "src": "../src/quadrature_oscillator_sync.v:36.19-36.55"
           },
           "port_directions": {
             "A": "input",
@@ -452,7 +452,7 @@
             "Y": [ 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569 ]
           }
         },
-        "$sub$src/tt_um_qosc.v:36$14": {
+        "$sub$../src/quadrature_oscillator_sync.v:36$14": {
           "hide_name": 1,
           "type": "$sub",
           "parameters": {
@@ -463,7 +463,7 @@
             "Y_WIDTH": "00000000000000000000000000100000"
           },
           "attributes": {
-            "src": "src/tt_um_qosc.v:36.19-36.77"
+            "src": "../src/quadrature_oscillator_sync.v:36.19-36.77"
           },
           "port_directions": {
             "A": "input",
@@ -482,30 +482,30 @@
           "hide_name": 1,
           "bits": [ 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537 ],
           "attributes": {
-            "src": "src/tt_um_qosc.v:21.5-47.8"
+            "src": "../src/quadrature_oscillator_sync.v:21.5-47.8"
           }
         },
         "$0\\accu_re[15:0]": {
           "hide_name": 1,
           "bits": [ 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521 ],
           "attributes": {
-            "src": "src/tt_um_qosc.v:21.5-47.8"
+            "src": "../src/quadrature_oscillator_sync.v:21.5-47.8"
           }
         },
-        "$add$src/tt_um_qosc.v:29$7_Y": {
+        "$add$../src/quadrature_oscillator_sync.v:29$7_Y": {
           "hide_name": 1,
           "bits": [ 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208 ],
           "attributes": {
           }
         },
-        "$add$src/tt_um_qosc.v:40$17_Y": {
+        "$add$../src/quadrature_oscillator_sync.v:40$17_Y": {
           "hide_name": 1,
           "bits": [ 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301 ],
           "attributes": {
             "unused_bits": "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"
           }
         },
-        "$add$src/tt_um_qosc.v:41$19_Y": {
+        "$add$../src/quadrature_oscillator_sync.v:41$19_Y": {
           "hide_name": 1,
           "bits": [ 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363 ],
           "attributes": {
@@ -517,7 +517,7 @@
           "bits": [ 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 586 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:28.24-28.42",
+            "src": "../src/quadrature_oscillator_sync.v:28.24-28.42",
             "unused_bits": "31"
           }
         },
@@ -526,7 +526,7 @@
           "bits": [ 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 587 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:29.24-29.42",
+            "src": "../src/quadrature_oscillator_sync.v:29.24-29.42",
             "unused_bits": "31"
           }
         },
@@ -535,7 +535,7 @@
           "bits": [ 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 588 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:29.47-29.65",
+            "src": "../src/quadrature_oscillator_sync.v:29.47-29.65",
             "unused_bits": "31"
           }
         },
@@ -544,75 +544,75 @@
           "bits": [ 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 589 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:28.23-28.66",
+            "src": "../src/quadrature_oscillator_sync.v:28.23-28.66",
             "unused_bits": "31"
           }
         },
-        "$mul$src/tt_um_qosc.v:28$3_Y": {
+        "$mul$../src/quadrature_oscillator_sync.v:28$3_Y": {
           "hide_name": 1,
           "bits": [ 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 590 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:28.47-28.65",
+            "src": "../src/quadrature_oscillator_sync.v:28.47-28.65",
             "unused_bits": "31"
           }
         },
-        "$mul$src/tt_um_qosc.v:36$11_Y": {
+        "$mul$../src/quadrature_oscillator_sync.v:36$11_Y": {
           "hide_name": 1,
           "bits": [ 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:36.37-36.54"
+            "src": "../src/quadrature_oscillator_sync.v:36.37-36.54"
           }
         },
-        "$mul$src/tt_um_qosc.v:36$13_Y": {
+        "$mul$../src/quadrature_oscillator_sync.v:36$13_Y": {
           "hide_name": 1,
           "bits": [ 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:36.59-36.76"
+            "src": "../src/quadrature_oscillator_sync.v:36.59-36.76"
           }
         },
-        "$mul$src/tt_um_qosc.v:40$16_Y": {
+        "$mul$../src/quadrature_oscillator_sync.v:40$16_Y": {
           "hide_name": 1,
           "bits": [ 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 591 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:40.34-40.46",
+            "src": "../src/quadrature_oscillator_sync.v:40.34-40.46",
             "unused_bits": "31"
           }
         },
-        "$mul$src/tt_um_qosc.v:41$18_Y": {
+        "$mul$../src/quadrature_oscillator_sync.v:41$18_Y": {
           "hide_name": 1,
           "bits": [ 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 592 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:41.34-41.46",
+            "src": "../src/quadrature_oscillator_sync.v:41.34-41.46",
             "unused_bits": "31"
           }
         },
-        "$sshr$src/tt_um_qosc.v:37$15_Y": {
+        "$sshr$../src/quadrature_oscillator_sync.v:37$15_Y": {
           "hide_name": 1,
           "bits": [ 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 505, 505, 505, 505, 505, 505, 505, 505, 505, 505, 505, 505, 505, 505, 505, 505 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:37.18-37.28"
+            "src": "../src/quadrature_oscillator_sync.v:37.18-37.28"
           }
         },
-        "$sub$src/tt_um_qosc.v:36$12_Y": {
+        "$sub$../src/quadrature_oscillator_sync.v:36$12_Y": {
           "hide_name": 1,
           "bits": [ 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:36.19-36.55"
+            "src": "../src/quadrature_oscillator_sync.v:36.19-36.55"
           }
         },
-        "$sub$src/tt_um_qosc.v:36$14_Y": {
+        "$sub$../src/quadrature_oscillator_sync.v:36$14_Y": {
           "hide_name": 1,
           "bits": [ 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:36.19-36.77",
+            "src": "../src/quadrature_oscillator_sync.v:36.19-36.77",
             "unused_bits": "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15"
           }
         },
@@ -621,7 +621,7 @@
           "bits": [ 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:12.30-12.37"
+            "src": "../src/quadrature_oscillator_sync.v:12.30-12.37"
           }
         },
         "accu_im_init": {
@@ -629,7 +629,7 @@
           "bits": [ 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:10.25-10.37"
+            "src": "../src/quadrature_oscillator_sync.v:10.25-10.37"
           }
         },
         "accu_re": {
@@ -637,7 +637,7 @@
           "bits": [ 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:11.30-11.37"
+            "src": "../src/quadrature_oscillator_sync.v:11.30-11.37"
           }
         },
         "accu_re_init": {
@@ -645,14 +645,14 @@
           "bits": [ 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:9.25-9.37"
+            "src": "../src/quadrature_oscillator_sync.v:9.25-9.37"
           }
         },
         "clk": {
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "src/tt_um_qosc.v:4.11-4.14"
+            "src": "../src/quadrature_oscillator_sync.v:4.11-4.14"
           }
         },
         "im_coeff": {
@@ -660,14 +660,14 @@
           "bits": [ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:7.25-7.33"
+            "src": "../src/quadrature_oscillator_sync.v:7.25-7.33"
           }
         },
         "load": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "src/tt_um_qosc.v:5.11-5.15"
+            "src": "../src/quadrature_oscillator_sync.v:5.11-5.15"
           }
         },
         "power": {
@@ -675,7 +675,7 @@
           "bits": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:8.25-8.30"
+            "src": "../src/quadrature_oscillator_sync.v:8.25-8.30"
           }
         },
         "re_coeff": {
@@ -683,7 +683,7 @@
           "bits": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
           "signed": 1,
           "attributes": {
-            "src": "src/tt_um_qosc.v:6.25-6.33"
+            "src": "../src/quadrature_oscillator_sync.v:6.25-6.33"
           }
         }
       }
